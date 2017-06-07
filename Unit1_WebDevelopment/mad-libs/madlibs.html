@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>Mad Libs</title>
+    <script src="madlibs.js"></script>
+  </head>
+  <body>
+    <div id="inputWords">
+      <table>
+        <tr>
+          <td align="right">NAME</td>
+          <td align='left'>
+            <input type='text' id='inputName'>
+          </td>
+        </tr>
+        <tr>
+          <td align="right">PAST TENSE VERB</td>
+          <td align='left'>
+            <input type='text' id='inputPastTenseVerb'>
+          </td>
+        </tr>
+        <tr>
+          <td align="right">RELATIVE</td>
+          <td align='left'>
+            <input type='text' id='inputRelative'>
+          </td>
+        </tr>
+        <tr>
+          <td align="right">VERB</td>
+          <td align='left'>
+            <input type='text' id='inputVerb'>
+          </td>
+        </tr>
+      </table>
+      <br />
+      <button type="button" onclick="showStory()">Show story!</button>
+    </div>
+    <div id="story" style="display: none">
+      <p>
+        Hello, my name is <span id="name"></span>. You <span id="pastTenseVerb"></span> my <span id="relative"></span>. Prepare to <span id="verb"></span>.
+      </p>
+    </div>
+  </body>
+</html>
